@@ -1,6 +1,33 @@
 public class Agencia {
-    int numAgencia = 302301;
-    String nome = "Agencia de Casa Amarela";
-    String endereco = "Rua 13 de maio, nº440";
-    String telefone= "(81)XXXXX-XX";
+    int numAgencia;
+    String nome;
+    String endereco;
+    String telefone;
+
+
+    Agencia(int numAgencia, String nome , String endereco, String telefone){
+        this.numAgencia = numAgencia;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+    }
+    Agencia(int numAgencia, String nome , String endereco){
+        this.numAgencia = numAgencia;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = null;
+    }
+    void mostrarDados(){
+        System.out.println("Número da agencia: "+numAgencia);
+        System.out.println("Nome da agencia: "+nome);
+        System.out.println("Endereço: "+endereco);
+        System.out.println("Telefone: "+telefone);
+        System.out.println(" ");
+    }
+    void alterarEnderecoAgencia(String endereco){
+        this.endereco = endereco;
+    }
+    void alterarTelefone(String telefone){
+        this.endereco = telefone;
+    }
 }

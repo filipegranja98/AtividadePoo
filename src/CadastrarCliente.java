@@ -3,12 +3,13 @@ import java.util.ArrayList;
 public class CadastrarCliente {
     ArrayList<Cliente> listaCliente = new ArrayList<>();
 
-    void adicionarCliente(Cliente novoCliente){
+    void cadastrarCliente(Cliente novoCliente){
+
         listaCliente.add(novoCliente);
     }
     void listarClientes(){
         for (Cliente cliente: listaCliente){
-            cliente.clienteDados();
+            cliente.mostrarDados();
             System.out.println(" ");
         }
 
